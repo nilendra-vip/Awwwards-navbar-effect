@@ -67,18 +67,6 @@ a{
     overflow: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #main{
     width: 100%;
     height: 100%;
@@ -111,4 +99,35 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
     width: 10px;
     background-color:transparent;
+}
+
+.phone-message{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: gilroy;
+    text-align: center;
+    color: white;
+}
+.phone-message h1{
+    font-size: 7vw;
+}
+.phone-message h2{
+    font-size: 4vw;
+}
+
+@media (max-width:1300px) {
+    #loader,
+    .navbar,
+    #main{
+        display: none;
+    }
+    .phone-message{
+        display: flex;
+    }
 }
